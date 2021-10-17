@@ -48,3 +48,92 @@ input {
     border: none;
     outline: none;
 }
+.cssMemSlider{
+  max-width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.slider__btn{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+
+  border: 0.2rem solid rgb(192, 74, 74);
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+.slider__btn:focus{background-color: rgb(29, 80, 5);}
+.active-slide{
+  background-color: rgb(29, 80, 5);
+}
+
+.slider-track{
+  display: flex;
+  transform: translateX(0);
+  transition: all .7s ease-in-out;
+  grid-column-start: 1;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 2;
+}
+
+.slider-controls  .slider__btn:nth-child(2):focus ~ .slider-track  {
+  transform: translateX(-100%);
+
+}
+.slider-controls  .slider__btn:nth-child(1):focus ~ .slider-track  {
+  transform: translateX(0);
+}
+.slider-controls  .slider__btn:nth-child(3):focus ~ .slider-track  {
+  transform: translateX(-200%);
+}
+.slider-controls  .slider__btn:nth-child(4):focus ~ .slider-track  {
+  transform: translateX(-300%);
+}
+.slider-img{
+  min-width: 100%;
+  width: 100%;
+  min-height: 35rem;
+}
+.slider-img:first-child{
+  
+  background-color:rgb(184, 0, 0) ;
+}
+.slider-img:nth-child(2){
+ 
+  background-color: chartreuse;
+}
+.slider-img:nth-child(3){
+  
+  background-color: coral;
+}
+.slider-img:nth-child(4){
+  
+  background-color: violet;
+}
+
+.slider__btn{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+transform: translateX(0);
+  border: 2px solid rgb(192, 74, 74);
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+
+
+.quotes{
+  display: flex;
+  
+}
+.quotes__item{
+  
+}
