@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+   position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+   
+    background-color: rgba(0,0,0, .8);
+  
+}
+
+button {
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
