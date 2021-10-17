@@ -108,7 +108,10 @@ input {
 .slider-img{
   min-width: 100%;
   width: 100%;
-  min-height: 35rem;
+  min-height: 50rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .slider-img:first-child{
   
@@ -140,3 +143,15 @@ transform: translateX(0);
   cursor: pointer;
 }
 
+.slider-img:nth-child(1){
+  background-image: url(./img/slide-1.jpg);
+}
+.slider-img:nth-child(2){
+  background-image: url(./img/slide-2.jpg);
+}
+.slider-img:nth-child(3){
+  background-image: url(./img/slide-3.jpg);
+}
+.slider-img:nth-child(4){
+  background-image: url(./img/slide-4.jpg);
+}
